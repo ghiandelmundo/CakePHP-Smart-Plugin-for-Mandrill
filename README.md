@@ -1,7 +1,7 @@
 Mandrill Smart Plugin for CakePHP
 ========
 
-This plugin will implement all Mandrill API calls defined in https://mandrillapp.com/api/1.0/. 
+This plugin will implement all Mandrill API calls defined in "https://mandrillapp.com/api/1.0".
 
 Requirements
 ------------
@@ -12,7 +12,7 @@ Requirements
 Installation
 ------------
 
-To install the plugin, place the files in a directory labelled "Mandrill/" in your "app/Plugin/" directory.
+To install the plugin, place the files in a directory labelled "Mandrill" in your "app/Plugin/" directory.
 
 Setup
 -----
@@ -153,4 +153,5 @@ Mandrill API documentation is available at <a href="https://mandrillapp.com/api/
 Author
 ---------
 
-2015 Ghian Del Mundo
+Ghian Del Mundo
+July 23, 2015
