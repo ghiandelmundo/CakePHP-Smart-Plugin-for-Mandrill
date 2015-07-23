@@ -78,7 +78,12 @@ class MandrillComponent extends Component {
     */
     public function __call($name, $arguments) {
 
-        $this->arguments = json_encode(array_merge(array('key' => $this->api_key), $arguments));
+        $this->arguments = json_encode(
+                                array_merge(array(
+                                    'key' => $this->api_key), 
+                                    (is_array($arguments) ? $arguments[0] : $arguments) 
+                                )
+                            );
         
         // parse json uri
         $uri = $this->base_uri.str_replace('_', '/', Inflector::underscore(str_replace('_', '-', $name))).'.json';
