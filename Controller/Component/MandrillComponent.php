@@ -81,7 +81,7 @@ class MandrillComponent extends Component {
         $this->arguments = json_encode(
                                 array_merge(array(
                                     'key' => $this->api_key), 
-                                    (is_array($arguments) ? $arguments[0] : $arguments) 
+                                    (!empty($arguments) ? $arguments[0] : $arguments) 
                                 )
                             );
         
